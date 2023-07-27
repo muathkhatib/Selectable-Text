@@ -36,7 +36,7 @@ const SelectableText: React.FC<SelectableTextProps> = ({
         if (selected) clickedWordText = selected;
         if (clickedWordText) {
           const cleanedWord = clickedWordText.replace(/['",.!?]/g, ""); // Clean the word from sympols Example: 'You -> You
-          const translation = await getTranslation(cleanedWord, "ar");
+          const translation = await getTranslation(cleanedWord, "tr");
 
           // Calculate the position of the clicked word relative to the parent div
           const parentRect = parentRef.current?.getBoundingClientRect();
